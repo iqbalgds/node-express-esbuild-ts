@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/client/main.ts"],
-  "sourcesContent": ["console.log(\"Hello from frontend TypeScript!\");\n\nconst el = document.getElementById(\"app\");\nif (el) {\n  el.textContent = \"Hello from Frontend TypeScript + esbuild!\";\n}\n\n// Example of calling the backend API\nasync function fetchMessage() {\n  try {\n    const res = await fetch(\"/api/hello\");\n    if (!res.ok) {\n      throw new Error(`Request failed with status ${res.status}`);\n    }\n    const data = await res.json();\n    console.log(\"Backend says:\", data.message);\n  } catch (err) {\n    console.error(\"Error fetching message:\", err);\n  }\n}\n\nfetchMessage();\n"],
-  "mappings": ";;;;;;;;AAAA;AAAA;AAAA,cAAQ,IAAI,iCAAiC;AAE7C,UAAM,KAAK,SAAS,eAAe,KAAK;AACxC,UAAI,IAAI;AACN,WAAG,cAAc;AAAA,MACnB;AAGA,qBAAe,eAAe;AAC5B,YAAI;AACF,gBAAM,MAAM,MAAM,MAAM,YAAY;AACpC,cAAI,CAAC,IAAI,IAAI;AACX,kBAAM,IAAI,MAAM,8BAA8B,IAAI,MAAM,EAAE;AAAA,UAC5D;AACA,gBAAM,OAAO,MAAM,IAAI,KAAK;AAC5B,kBAAQ,IAAI,iBAAiB,KAAK,OAAO;AAAA,QAC3C,SAAS,KAAK;AACZ,kBAAQ,MAAM,2BAA2B,GAAG;AAAA,QAC9C;AAAA,MACF;AAEA,mBAAa;AAAA;AAAA;",
-  "names": []
-}
